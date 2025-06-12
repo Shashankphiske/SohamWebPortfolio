@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'PrimerFont';
+  src: url('/fonts/PrimerPrint.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
