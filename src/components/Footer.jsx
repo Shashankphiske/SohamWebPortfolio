@@ -1,5 +1,6 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
 
@@ -22,9 +23,9 @@ const Footer = () => {
             <div className='flex flex-col gap-4 h-[20vh]'>
                 <p className='text-[1.8vw]'>Explore</p>
                 <div className='flex flex-col gap-2 text-[1.2vw]'>
-                    <p>About Us</p>
-                    <p>Portfolio</p>
-                    <p>Contact</p>
+                    <Link  to="/about">About Us</Link>
+                    <Link to="/portfolio">Portfolio</Link>
+                    <Link to="/contact">Contact</Link>
                 </div>
             </div>
             <div className='flex flex-col gap-4 ml-24 h-[20vh]'>
@@ -34,8 +35,11 @@ const Footer = () => {
                     <p>sogambajwa@gmail.com</p>
                 </div>
             </div>
-            <button className='py-1 px-2 rounded-full border border-white hover:bg-white hover:text-black text-[1.2vw]'>Contact Page</button>
+            <Link to="/contact">
+                <button className='py-1 px-2 rounded-full border border-white hover:bg-white hover:text-black text-[1.2vw]'>Contact Page</button>
+            </Link>
         </div>
+        <p className='ml-6 mt-5 text-[1vw] text-white'>©2025 Design Den Designs. All rights reserved</p>
     </div>
   )
 }

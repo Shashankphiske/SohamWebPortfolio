@@ -2,20 +2,23 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
-import Footer from './components/Footer'
-import { BrowserRouter, Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import Contact from './components/Contact'
+import About from './components/About'
 
 function App() {
 
 
   return (
-    <>
-      <div style={{ fontFamily : "PrimerFont" }} className=''>
+      <>
         <Navbar />
-        <Home />
-        <Footer />
-      </div>
-    </>
+        <Routes style={{ fontFamily : "PrimerFont" }} className=''>
+          <Route path='/' element={ <Home /> } />
+          <Route path='/contact' element = { <Contact /> } />
+          <Route path='/about' element={ <About /> } />
+        </Routes>
+      </>
+
   )
 }
 
