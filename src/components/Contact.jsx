@@ -15,11 +15,11 @@ const Contact = () => {
                 <div className='flex flex-col gap-3 w-[]'>
                     <div className='flex flex-row gap-3 items-center'>
                         <PhoneIcon className='h-6 w-6'/>
-                        <p className='text-[1.5vw]'>+91 9960490150</p>
+                        <p className='text-[1.5vw]'>+91 7841010250</p>
                     </div>
                     <div className='flex flex-row gap-3 items-center'>
                         <EnvelopeIcon className='h-6 w-6'/>
-                        <p className='text-[1.5vw]'>sogambajwa@gmail.com</p>
+                        <p className='text-[1.5vw]'>designdeninteriors22@gmail.com</p>
                     </div>
                 </div>
                 <ContactPage />

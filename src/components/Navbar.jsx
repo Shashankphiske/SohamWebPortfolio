@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div style={{ fontFamily : "PrimerFont" }} className='w-full bg-white h-24 flex flex-row items-center justify-between px-16 z-50 fixed'>
-        <img src="/logo.png" alt="" className='w-[130px]'/>
+    <div style={{ fontFamily : "PrimerFont" }} className='w-full bg-white h-12 md:h-20 lg:h-24 flex flex-row items-center justify-between px-16 z-50 fixed'>
+        <Link to="/" ><img src="/logo.png" alt="" className='w-[130px]'/></Link>
         <div className='flex flex-row justify-between w-1/3 text-[1.4vw]'>
             <Link to="/" className=''>Home</Link>
             <Link to="/about" className=''>About Us</Link>

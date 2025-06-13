@@ -8,12 +8,11 @@ const About = () => {
             <img src="/aboutphoto.jpg" alt="" className='w-[25vw] h-auto rounded-xl'/>
             <div className='flex flex-col gap-10'>
                 <p className='text-[2vw]'>About Us</p>
-                <p className='text-[1.5vw]'> a reputed university  in The United Kingdom.  
- 
-                She was  Inspired by the British colonial architecture and design.,  which  fascinated  her to further explore the design philosophy of the European  art and architecture.  Aashi’s designs pursue a studied style fusion of both contemporary and classical forms. Like any true artist, Aashi intricately handles every component of the design process from conception to execution. From furniture and lighting to floor plans and accessorising, her creations are inherently cohesive.
+                <p className='text-[1.5vw]'> I'm Soham Ambede, an interior designer known for my nature-inspired, stylish, and functional designs. My signature style involves incorporating earthy colors, curved patterns, and natural materials to craft spaces that exude warmth and tranquility while connecting people to nature.
 
-                Aashi is committed to transforming spaces into timeless, functional  and inspiring environments. She has earned a stellar reputation for classical timeless designs, all of which she executes with an exceptional level of craftsmanship
+My design philosophy revolves around a deep understanding of my clients' unique needs and lifestyles. I'm passionate about blending aesthetics seamlessly with functionality, ensuring that my designs enhance overall well-being.
 
+If you're in search of a designer who effortlessly marries style and functionality with a nature-inspired flair, look no further
                 </p>
             </div>
         </div>
