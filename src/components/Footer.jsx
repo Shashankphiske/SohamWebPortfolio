@@ -9,7 +9,7 @@ const Footer = () => {
     const behance = <SocialIcon url='https://www.behance.net/designdeninteriors' bgColor='white' fgColor='black'/>
 
   return (
-    <div className='flex flex-col gap-2 bg-black w-full md:h-[50vh] items-center justify-center'>
+    <div className='flex flex-col gap-2 bg-neutral-900 w-full md:h-[50vh] items-center justify-center'>
         <div className='flex flex-col gap-2 w-full items-center justify-center mt-5 md:mt-5'>
             <p className='text-white text-[3vw] md:text-[2vw]'>Stay in Touch</p>
             <div className='flex flex-row gap-2'>
@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
         </div>
         <div className='h-[0.5px] bg-white w-[80vw] md:w-[60vw] lg:w-[50vw] mt-5'></div>
-        <div className='w-[80vw] md:w-[60vw] lg:w-[50vw] flex flex-row items-center justify-between  text-white'>
+        <div className='w-[80vw] md:w-[60vw] lg:w-[50vw] flex flex-row items-center justify-between gap-2 md:gap-0 text-white'>
             <div className='flex flex-col gap-4 h-[20vh]'>
                 <p className='text-[2.5vw] md:text-[1.8vw]'>Explore</p>
                 <div className='flex flex-col gap-2 text-[2vw] md:text-[1.2vw]'>

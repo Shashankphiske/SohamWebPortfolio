@@ -2,9 +2,13 @@ import React from 'react'
 import Footer from "./Footer"
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
+import data from '../projectData';
+import ProjectCard from './ProjectCard';
+import Carousel from './Carousal';
 
 const Home = () => {
   return (
+    <>
     <div className='flex flex-col w-full -z-20 gap-10' style={{ fontFamily : "PrimerFont" }}>
         <div className='relative w-full'>
             <img src="/livingroom.jpg" alt="homeimage" className='w-full h-auto object-cover' />
@@ -20,14 +24,19 @@ const Home = () => {
             </div>
             <div className='border-white h-[0.5px] md:h-[1px] bg-black'></div>       
         </div>
-        <div className='px-10 md:px-20 lg:px-40'>
-            <p className='text-[3vw] md:text-[2vw] font-semibold'>Projects</p>
-            <div className='w-full h-[50vh] md:h-[75vh]'>
-
-            </div>
+        <div className='w-full flex flex-row items-start px-10'>
+            <Carousel />
         </div>
-        <div className='w-full bg-black h-[30vh] md:h-[50vh] lg:h-[60vh]'>
-
+        <div className='px-10 md:px-20 lg:px-30 bg-amber-50 p-2'>
+            <p className='text-[3vw] md:text-[2vw]'>Recent Projects</p>
+            <div className='w-full mt-10 flex flex-row items-center justify-center gap-5'>
+                {
+                    data.map((data, index) => {
+                        console.log(data[1])
+                        return <ProjectCard data={data} key={index} />
+                    })
+                }
+            </div>
         </div>
         <div className='w-full flex flex-col gap-10 px-10 md:px-20 lg:px-30'>
             <p className='text-[3vw] md:text-[2vw] font-semibold'>About Us</p>
@@ -41,6 +50,7 @@ const Home = () => {
         </div>
         <Footer />
     </div>
+    </>
   )
 }
 
