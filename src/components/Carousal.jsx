@@ -27,36 +27,41 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full h-auto overflow-hidden rounded-lg">
-      <div
-        className="flex transition-transform duration-700 ease-in-out"
-        style={{ transform: `translateX(-${index * 85}%)` }}
-      >
-        {images.map((src, i) => (
-          <img
-            key={i}
-            src={src}
-            alt={`Slide ${i}`}
-            className="min-w-[85%] h-[80vh] object-cover rounded-lg mx-[2.5%]"
-          />
-        ))}
+    <div className="relative w-full max-w-[100vw] overflow-hidden">
+      {/* Maintain 16:9 Aspect Ratio */}
+      <div className="relative w-full pt-[56.25%]"> {/* 16:9 = 9/16 = 56.25% */}
+        <div
+          className="absolute top-0 left-0 h-full flex transition-transform duration-700 ease-in-out"
+          style={{ transform: `translateX(-${index * 85}%)` }}
+        >
+          {images.map((src, i) => (
+            <div key={i} className="min-w-[85%] mx-[2.5%] h-full overflow-hidden rounded-lg shadow-md">
+              <img
+                src={src}
+                alt={`Slide ${i}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
+      {/* Arrows */}
       <button
         onClick={goToPrev}
-        className="absolute top-1/2 left-1 -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded hover:bg-opacity-75 z-20"
+        className="absolute top-1/2 left-2 -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded hover:bg-opacity-75 z-20"
       >
         ‹
       </button>
-
       <button
         onClick={goToNext}
-        className="absolute top-1/2 right-1 -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded hover:bg-opacity-75 z-20"
+        className="absolute top-1/2 right-2 -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded hover:bg-opacity-75 z-20"
       >
         ›
       </button>
 
-      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+      {/* Dots */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
         {images.map((_, i) => (
           <span
             key={i}
