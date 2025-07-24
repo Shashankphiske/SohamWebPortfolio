@@ -27,9 +27,9 @@ const Home = () => {
         <div className='w-full flex flex-row items-start'>
             <Carousel />
         </div>
-        <div className='px-5 md:px-20 lg:px-30 bg-amber-50 p-2'>
-            <p className='ml-6 text-[3vw] md:text-[2vw]'>Recent Projects</p>
-            <div className='w-full mt-3 md:mt-10 flex flex-row flex-wrap items-center justify-center gap-2 md:gap-5 md:px-2'>
+        <div className='px-5 lg:px-5 bg-amber-50 p-2'>
+            <p className='ml-4 md:ml-14 lg:ml-20 text-[3vw] md:text-[2vw]'>Recent Projects</p>
+            <div className='w-full mt-3 md:mt-10 flex flex-row flex-wrap items-center justify-center gap-2 md:gap-2 lg:gap-5 md:px-2'>
                 {
                     data.map((data, index) => {
                         console.log(data[1])
@@ -39,7 +39,7 @@ const Home = () => {
             </div>
         </div>
         <div className='w-full flex flex-col gap-10 px-10 md:px-20 lg:px-30'>
-            <p className='text-[3vw] md:text-[2vw] font-semibold'>About Us</p>
+            <p className='text-[3vw] md:text-[2vw]'>About Us</p>
             <div className='flex flex-row gap-10 md:gap-20 justify-between w-full'>
                 <img src="/aboutphoto.jpg" alt="" className='w-[33vw] md:w-[25vw] h-auto rounded-xl'/>
                 <div className='flex flex-col gap-10 '>
