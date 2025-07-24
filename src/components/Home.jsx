@@ -24,12 +24,12 @@ const Home = () => {
             </div>
             <div className='border-white h-[0.5px] md:h-[1px] bg-black'></div>       
         </div>
-        <div className='w-full flex flex-row items-start px-10'>
+        <div className='w-full flex flex-row items-start'>
             <Carousel />
         </div>
-        <div className='px-10 md:px-20 lg:px-30 bg-amber-50 p-2'>
-            <p className='text-[3vw] md:text-[2vw]'>Recent Projects</p>
-            <div className='w-full mt-10 flex flex-row items-center justify-center gap-5'>
+        <div className='px-5 md:px-20 lg:px-30 bg-amber-50 p-2'>
+            <p className='ml-6 text-[3vw] md:text-[2vw]'>Recent Projects</p>
+            <div className='w-full mt-3 md:mt-10 flex flex-row flex-wrap items-center justify-center gap-2 md:gap-5 md:px-2'>
                 {
                     data.map((data, index) => {
                         console.log(data[1])

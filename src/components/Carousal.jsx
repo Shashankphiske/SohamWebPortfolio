@@ -32,10 +32,10 @@ const Carousel = () => {
       <div className="relative w-full pt-[56.25%]"> {/* 16:9 = 9/16 = 56.25% */}
         <div
           className="absolute top-0 left-0 h-full flex transition-transform duration-700 ease-in-out"
-          style={{ transform: `translateX(-${index * 85}%)` }}
+          style={{ transform: `translateX(-${index * 100}%)` }}
         >
           {images.map((src, i) => (
-            <div key={i} className="min-w-[85%] mx-[2.5%] h-full overflow-hidden rounded-lg shadow-md">
+            <div key={i} className="min-w-full h-full overflow-hidden shadow-md">
               <img
                 src={src}
                 alt={`Slide ${i}`}

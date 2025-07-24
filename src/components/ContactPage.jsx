@@ -12,7 +12,7 @@ const ContactPage = () => {
     <div className='flex flex-col w-[70vw] md:w-[30vw] py-3 px-3 items-center justify-between gap-4 border rounded-xl'>
         <div className='flex flex-col w-full'>
             <p className='md:text-[1.6vw] lg:text-[1.3vw]'>Name</p>
-            <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder='John Doe' className='border border-gray-300 rounded-lg py-1 px-2 md:text-[1.6vw]'/>
+            <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder='John Doe' className='border border-gray-300 rounded-lg py-1 px-2 md:text-[1.3vw]'/>
         </div>  
         <div className='flex flex-col w-full'>
             <p className='md:text-[1.6vw] lg:text-[1.3vw]'>Phone Number</p>
