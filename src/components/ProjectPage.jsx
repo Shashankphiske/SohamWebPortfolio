@@ -11,7 +11,7 @@ const ProjectPage = () => {
   const mainData = filteredData[0];
 
   return (
-    <div className="flex flex-col w-full md:p-6 items-center justify-center gap-5 relative" style={{ fontFamily: "PrimerFont" }}>
+    <div className="flex flex-col w-full items-center justify-center gap-5 relative" style={{ fontFamily: "PrimerFont" }}>
       <div className="w-[87vw] md:w-[81vw] flex flex-row justify-between mt-32">
         <div className="flex w-[50vw] h-[70vw] md:w-[60vw] md:h-[80vh] overflow-hidden rounded-xl">
           <img

@@ -2,6 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const ProjectCard = ({ data }) => {
+  //document.addEventListener("contextmenu", event => {
+    // event.preventDefault();
+  //});
+
   return (
     <Link to={`/projects/${data[0]}`}>
       <div className='flex flex-col justify-between gap-2 md:gap-4 w-[40vw] md:w-[22vw] max-h-fit rounded-lg md:rounded-xl p-2'>
